@@ -13,7 +13,10 @@ async function scrapeArticles(){
       const title =$(el).find('h2').text().trim();
       const summary = $(el).find('p').first().text().trim();
       const link =$(el).find('a').attr('href') || '';
-      const image = $(el).find('img').attr('src') || '';
+	  
+	  // ✅ Extract image from inside .post-image > a > img  document.querySelector("#post-4720 > div") #post-4720 > div
+      const imageD =$(el).find('.lae-post-overlay ').css('background-image') || '';
+	  const image=imageD.slice(4,-1);//replace(/^url\(['"](.+)['"]\)/, '$1');	
 
       articles.push({ title, summary, link, image });
     });
