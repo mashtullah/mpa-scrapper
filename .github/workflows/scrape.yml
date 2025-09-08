@@ -1,4 +1,7 @@
 yaml
+permissions:
+  contents: write
+
 name: Scrape Articles
 
 on:
