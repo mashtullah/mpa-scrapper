@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2"
+  },
+  "name": "mpa-scrapper",
+  "version": "1.0.0",
+  "main": "scraper.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mashtullah/mpa-scrapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mashtullah/mpa-scrapper/issues"
+  },
+  "homepage": "https://github.com/mashtullah/mpa-scrapper#readme",
+  "description": ""
+}

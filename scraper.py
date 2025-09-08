@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import os
 
 def scrape_articles():
     url = 'https://motoringpress.agency'
@@ -23,6 +24,6 @@ def scrape_articles():
     with open('data/articles.json', 'w') as f:
         json.dump(articles, f, indent=2)
 
-if name == 'main':
+if __name__ == '__main__':
     scrape_articles()
 
